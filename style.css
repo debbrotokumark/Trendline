@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Protest Revolution", sans-serif; */
+    font-family: "Arimo", sans-serif;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+
+}
+
+nav {
+    width: 100%;
+    height: 18%;
+    padding: 20px 30px;
+}
+
+.navdiv {
+    width: 100%;
+    display: flex;
+}
+
+#topnav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navdiv ul {
+    display: flex;
+}
+
+#navicone {
+    display: inline-flex;
+
+}
+
+#top-ul {
+    gap: 20px;
+}
+
+.circle_div {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#bd-link {
+    color: gray;
+}
+
+li {
+    list-style: none;
+    color: black;
+}
+
+li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 1vw;
+}
+
+#menu-icone {
+    display: none;
+}
+
+#bottomnav-ul {
+    margin-top: 30px;
+    gap: 75px;
+}
+
+main {
+    width: 100%;
+    height: 82%;
+    position: relative;
+}
+
+.box {
+    width: 100%;
+    height: 50%;
+}
+
+#top-div {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.top-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+
+#top-div::-webkit-scrollbar-thumb {
+    background-color: orange;
+
+}
+
+#top-div::-webkit-scrollbar {
+    height: 7px;
+    background-color: transparent;
+}
+
+.lookbook-div {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    left: -15%;
+
+}
+
+.lookbook-div p {
+    margin-left: 50px;
+}
+
+h2 {
+    font-size: 10vw;
+    font-weight: 20;
+}
+
+
+
+
+#bottom-div {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-position: 0;
+    background-size: cover;
+    display: flex;
+    overflow-x: auto;
+}
+
+
+#bottom-div::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    object-fit: cover;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
+#bottom-div #icone {
+
+    margin-top: 120px;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    z-index: 10;
+    justify-content: space-between;
+    display: flex;
+}
+
+#bottom-div #icone i {
+    color: rgb(244, 244, 244);
+    font-size: 3vw;
+    word-wrap: normal;
+    z-index: 10;
+
+}
+
+@media (max-width:600px) {
+
+
+    nav {
+        width: 100%;
+        padding: 00px;
+    }
+
+    .navdiv {
+        width: 100%;
+
+    }
+
+    #topnav {
+        padding: 20px;
+        width: 100%;
+        background-color: rgba(162, 162, 162, 0.201);
+
+
+
+    }
+
+    #bottomnav {
+        padding: 10px;
+        width: 100%;
+        margin-top: 0px;
+        gap: 100px;
+    }
+
+
+    .navdiv ul {
+        display: flex;
+    }
+
+    #navicone {
+        display: inline-flex;
+
+    }
+
+    #top-ul a {
+        margin-right: 30px;
+    }
+
+    #top-ul {
+        gap: 0px;
+    }
+
+    .circle_div {
+        width: 15px;
+        height: 15px;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    #bd-link {}
+
+    .part2-topul {
+        display: none;
+    }
+
+    li {
+        list-style: none;
+        color: black;
+    }
+
+    li a {
+        color: #000;
+        text-decoration: none;
+        font-weight: 550;
+        font-size: 3.8vw;
+    }
+
+    #menu-icone {
+        display: block;
+        font-size: 5vw;
+    }
+
+    #bottomnav-ul {
+        width: 100%;
+        margin-top: 10px;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        align-items: center;
+        grid-row: 2;
+
+    }
+
+
+    .top-box {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-shrink: 0;
+        margin-right: 0px;
+
+    }
+
+
+    .lookbook-div {
+        margin-top: 0px;
+        position: relative;
+        display: flex;
+        justify-content: start;
+        left: 0%;
+
+    }
+
+    .lookbook-div p {
+        margin-left: 10px;
+        font-size: 7vw;
+    }
+
+    .lookbook-div h3 {
+        margin-left: 0px;
+        font-size: 7vw;
+    }
+
+    h2 {
+        font-size: 13vw;
+        font-weight: 20;
+
+    }
+
+
+
+    #bottom-div #icone {
+        margin-top: 200px;
+        position: fixed;
+        width: 100%;
+        align-items: center;
+        z-index: 10;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    #bottom-div #icone i {
+        color: rgb(244, 244, 244);
+        font-size: 10vw;
+        word-wrap: normal;
+        z-index: 10;
+
+    }
+
+}
